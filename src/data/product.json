@@ -1,0 +1,76 @@
+[
+    {
+        "images": ["./images/9.jpg", "./images/10.jpg"],
+        "rate": 4,
+        "title": "waist dress",
+        "price": 184.00,
+        "old_price": 230.00,
+        "colour": ["bg-green", "bg-black"]
+    },
+
+    {
+        "images": ["./images/11.jpg", "./images/12.jpg", "./images/22.jpg"],
+        "rate": 4,
+        "title": "crop top",
+        "price": 72.60,
+        "old_price": 121.00,
+        "colour": ["bg-olive", "bg-gray", "bg-red"]
+    },
+
+    {
+        "images": ["./images/13.jpg", "./images/8.jpg", "./images/15.jpg"],
+        "rate": 4,
+        "title" : "sleeveless dress",
+        "price": 261.00,
+        "old_price": 290.00,
+        "colour": ["bg-pink", "bg-white", "bg-black"]
+    },
+
+    {
+        "images": ["./images/14.jpg", "./images/16.jpg"],
+        "rate": 4,
+        "title": "v-neck dress",
+        "price": 94.50,
+        "old_price": 315.00,
+        "colour": ["bg-yellow", "bg-black"]
+    },  
+
+    {
+        "images": ["./images/39.jpg", "./images/14.jpg", "./images/25.jpg"],
+        "rate": 4,
+        "title": "trim dress",
+        "price": 87.00,
+        "old_price": 145.00,
+        "colour": ["bg-yellow", "bg-white", "bg-pink"]
+    }, 
+    
+
+    {
+        "images": ["./images/3.jpg", "./images/4.jpg", "./images/5.jpg"],
+        "rate": 4,
+        "title": "belted dress",
+        "price": 111.00,
+        "old_price": 185.00,
+        "colour": ["bg-olive", "bg-navy", "bg-red"]
+    },
+
+    {
+        "images": ["./images/1.jpg", "./images/2.jpg"],
+        "rate": 4,
+        "title": "fitted dress",
+        "price": 104.40,
+        "old_price": 174.00,
+        "colour": ["bg-white", "bg-black"]
+    },
+
+    {
+        "images": ["./images/8.jpg", "./images/7.jpg"],
+        "rate": 4,
+        "title": "belted top",
+        "price": 49.00,
+        "old_price": 98.00,
+        "colour": ["bg-white", "bg-skyblue"]
+    } 
+
+
+]

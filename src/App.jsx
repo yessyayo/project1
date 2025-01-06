@@ -9,6 +9,7 @@ import Product from './Component/Product'
 import Action from './Component/Action'
 import Banner from './Component/Banner'
 import Blogo from './Component/Blogo'
+import Exclusive from './Component/Exclusive'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
       <Feature/>
       <Collection/>
       <Banner/>
+      <Exclusive/>
       <Action/>
       <Product/>
       <Instagram/>

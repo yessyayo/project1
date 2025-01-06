@@ -34,13 +34,7 @@ export default function Hero() {
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 transition-transform duration-1000 ease-in-out ${
-            index === currentSlide ? 'translate-x-0' : 'translate-x-full'
-          } ${
-            index === currentSlide - 1 || (currentSlide === 0 && index === slides.length - 1)
-              ? '-translate-x-full'
-              : ''
-          }`}
+          className={`absolute inset-0 transition-transform duration-1000 ease-in-out ${index === currentSlide ? 'translate-x-0' : 'translate-x-full'} ${index === currentSlide - 1 || (currentSlide === 0 && index === slides.length - 1) ? '-translate-x-full' : ''}`}
           style={{
             backgroundImage: `url(${slide.image})`,
             backgroundSize: 'cover',
@@ -64,13 +58,15 @@ export default function Hero() {
       {/* Previous Button */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-28 transform -translate-y-1/2 bg-white bg-opacity-50 text-black rounded-full text-2xl p-5 pi pi-angle-left" 
+        className="absolute top-1/2 left-28 transform -translate-y-1/2 bg-white bg-opacity-50 text-black rounded-full text-2xl p-5 pi pi-angle-left"
+        aria-label="Previous Slide"
       ></button>
 
       {/* Next Button */}
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-28 transform -translate-y-1/2 bg-white bg-opacity-50 text-black rounded-full text-2xl p-5  pi pi-angle-right"
+        className="absolute top-1/2 right-28 transform -translate-y-1/2 bg-white bg-opacity-50 text-black rounded-full text-2xl p-5 pi pi-angle-right"
+        aria-label="Next Slide"
       ></button>
     </div>
   );

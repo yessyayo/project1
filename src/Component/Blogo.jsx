@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import brand1 from '../assets/images/Multikart - Multi-purpopse E-commerce React Template_files/1.png';
 import brand2 from '../assets/images/Multikart - Multi-purpopse E-commerce React Template_files/2.png';
 import brand3 from '../assets/images/Multikart - Multi-purpopse E-commerce React Template_files/3.png';
@@ -7,15 +7,17 @@ import brand5 from '../assets/images/Multikart - Multi-purpopse E-commerce React
 
 export default function Blogo() {
   return (
-    <div className='mb-[70px]'>
+    <div className='w-full mb-[70px]'>
       {/* Brand Logos */}
-      <div className="flex justify-center w-[100%] pl-20 pr-20 pt-20 ">
-        <div className='px-16'><img src={brand1} alt="Brand 1"/></div>
-        <div className='px-16'><img src={brand2} alt="Brand 2"/></div>
-        <div className='px-16'><img src={brand3} alt="Brand 3"/></div>
-        <div className='px-16'><img src={brand4} alt="Brand 4"/></div>
-        <div className='px-16'><img src={brand5} alt="Brand 5"/></div>
-      </div>
+      <div className="flex justify-around items-center pt-10 md:pt-20 w-full">
+        {
+          [brand1, brand2, brand3, brand4, brand5].map((image, index) => (
+            <div key={index} className={`${index > 1 ? 'hidden sm:flex' : 'block'}`}>
+              <img src={image} className='w-full'/>
+            </div>
+          ))
+        }
+      </div> 
     </div>
-  )
+  );
 }
